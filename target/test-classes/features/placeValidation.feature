@@ -11,7 +11,7 @@ Scenario Outline:
 	Examples: 
 		|name|language|address|APIResource|requestType|APIresource|
 		|Frontline house|English|ONE TMT SQUARE,NY,USA|ADD_PLACE_API|POST|GET_PLACE_API|
-#		|Frontline Bank|Spanish|ONE TMTOMN SQUARE,NYU,SPAIN|ADD_PLACE_API|POST|
+		|Frontline Bank|Spanish|ONE TMTOMN SQUARE,NYU,SPAIN|ADD_PLACE_API|POST|
 
 @DeletePlace @Regression
 Scenario Outline: Verify if Delete Place functionality is working
