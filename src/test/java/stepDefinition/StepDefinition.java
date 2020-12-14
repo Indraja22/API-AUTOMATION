@@ -23,7 +23,7 @@ public class StepDefinition extends Utils {
 
 	@Given("Add Place Payload with {string} {string} {string}")
 	public void add_place_payload_with(String name, String language, String address) throws Throwable {
-
+		System.out.println("MAP API");
 		res = given().spec(requestSpecification()).body(data.addplacePayload(name, language, address));
 	}
 
@@ -66,7 +66,7 @@ public class StepDefinition extends Utils {
 		System.out.println(place_id);
 		user_calls_with_post_http_request(resource, "GET");
 		String name = getJsonPath(respo, "name");
-		System.out.println(expectedName);
+		System.out.println("The expected Name is  : "+expectedName);
 		assertEquals(expectedName, name);
 	}
 
